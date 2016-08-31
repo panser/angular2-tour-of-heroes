@@ -78,7 +78,7 @@ export class AppComponent implements OnInit {
     }
 
     getHeroes(): void {
-        this.heroService.getHeroes()
+        this.heroService.getHeroesSlowly()
             .then(heroes => this.heroes = heroes);
     }
 
